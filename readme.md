@@ -12,5 +12,5 @@ Steps:
 4. Run `npm run docker:admin-user-token` to get the admin user token
 5. Update the applications configuration
 6. Apply the applications
-7. Visit the [kubernetes dashboard](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/) to check the cluster status
+7. Run `kubectl proxy` and visit the [kubernetes dashboard](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/) to check the cluster status
 8. Update `/etc/hosts` to point to the domain set in the applications
